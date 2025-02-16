@@ -4,7 +4,10 @@ import polars as pl
 from pydantic import BaseModel
 
 from mango_tango_cib.analyzer_interface import UserInputColumn as BaseUserInputColumn
-from preprocessing.series_semantic import SeriesSemantic, infer_series_semantic
+from mango_tango_cib.preprocessing.series_semantic import (
+    SeriesSemantic,
+    infer_series_semantic,
+)
 from storage import AnalysisModel, ProjectModel
 
 from .app_context import AppContext

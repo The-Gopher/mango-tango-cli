@@ -18,8 +18,10 @@ from mango_tango_cib.analyzer_interface.context import (
     SecondaryAnalyzerContext as BaseSecondaryAnalyzerContext,
 )
 from mango_tango_cib.analyzer_interface.context import TableReader, TableWriter
-from mango_tango_cib.analyzer_interface.context import WebPresenterContext as BaseWebPresenterContext
-from preprocessing.series_semantic import SeriesSemantic
+from mango_tango_cib.analyzer_interface.context import (
+    WebPresenterContext as BaseWebPresenterContext,
+)
+from mango_tango_cib.preprocessing.series_semantic import SeriesSemantic
 from storage import AnalysisModel, Storage
 
 
