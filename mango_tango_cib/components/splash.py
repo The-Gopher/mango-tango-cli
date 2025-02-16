@@ -1,4 +1,4 @@
-from meta import get_version
+from mango_tango_cib.meta import get_version
 from terminal_tools import clear_terminal, wait_for_key
 
 
