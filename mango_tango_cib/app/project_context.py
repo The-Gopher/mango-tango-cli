@@ -8,7 +8,7 @@ from mango_tango_cib.preprocessing.series_semantic import (
     SeriesSemantic,
     infer_series_semantic,
 )
-from storage import AnalysisModel, ProjectModel
+from mango_tango_cib.storage import AnalysisModel, ProjectModel
 
 from .app_context import AppContext
 

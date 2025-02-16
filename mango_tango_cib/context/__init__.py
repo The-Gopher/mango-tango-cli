@@ -22,7 +22,7 @@ from mango_tango_cib.analyzer_interface.context import (
     WebPresenterContext as BaseWebPresenterContext,
 )
 from mango_tango_cib.preprocessing.series_semantic import SeriesSemantic
-from storage import AnalysisModel, Storage
+from mango_tango_cib.storage import AnalysisModel, Storage
 
 
 class PrimaryAnalyzerContext(BasePrimaryAnalyzerContext):
