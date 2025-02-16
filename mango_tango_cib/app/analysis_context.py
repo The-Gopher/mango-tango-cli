@@ -4,8 +4,11 @@ from typing import Literal
 
 from pydantic import BaseModel
 
-from mango_tango_cib.analyzer_interface import AnalyzerDeclaration, SecondaryAnalyzerDeclaration
-from context import (
+from mango_tango_cib.analyzer_interface import (
+    AnalyzerDeclaration,
+    SecondaryAnalyzerDeclaration,
+)
+from mango_tango_cib.context import (
     InputColumnProvider,
     PrimaryAnalyzerContext,
     SecondaryAnalyzerContext,
