@@ -10,8 +10,8 @@ from waitress import serve
 from mango_tango_cib.analyzer_interface.suite import AnalyzerSuite
 from context import WebPresenterContext
 from storage import AnalysisModel, Storage
-from terminal_tools import wait_for_key
-from terminal_tools.inception import TerminalContext
+from mango_tango_cib.terminal_tools import wait_for_key
+from mango_tango_cib.terminal_tools.inception import TerminalContext
 
 
 def analysis_web_server(
