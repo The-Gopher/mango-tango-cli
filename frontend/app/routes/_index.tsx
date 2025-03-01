@@ -22,15 +22,17 @@ export default function Index() {
 
   const data = useLoaderData<ProjectType[]>();
 
-  console.log(data);
 
   return (
     <div>
       {data.map((item) => (
-        <div key={item.directory_name}>{item.name}</div>
-      ))}
+        <div key={item.directory_name}>
+          <Link key={item.directory_name} to={`/edit/${item.directory_name}`}>{item.name}</Link>
+        </div>
+      ))
+      }
       <Link to="/add-project">Add Project</Link>
-    </div>
+    </div >
   );
 }
 
