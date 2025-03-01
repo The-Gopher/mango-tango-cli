@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import ProjectType from "~/types/project";
 
 
@@ -17,6 +17,7 @@ export const loader = async () => {
   return data;
 };
 
+
 export default function Index() {
 
   const data = useLoaderData<ProjectType[]>();
@@ -28,7 +29,7 @@ export default function Index() {
       {data.map((item) => (
         <div key={item.directory_name}>{item.name}</div>
       ))}
-      TODO
+      <Link to="/add-project">Add Project</Link>
     </div>
   );
 }
