@@ -80,7 +80,10 @@ class ProjectSchema(Schema):
 
 
 blp = Blueprint(
-    "projects", "projects", url_prefix="/projects", description="Operations on projects"
+    "projects",
+    "projects",
+    url_prefix="/api/projects",
+    description="Operations on projects",
 )
 
 
