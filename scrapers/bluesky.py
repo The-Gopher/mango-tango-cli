@@ -1,22 +1,22 @@
-from typing import Generator
-from atproto import (
-    CAR,
-    FirehoseSubscribeReposClient,
-    firehose_models,
-    models,
-    AtUri,
-    parse_subscribe_repos_message,
-)
-from datetime import datetime
-import atproto_client.models.app.bsky.feed.post
-from dataclasses import dataclass
 import multiprocessing
 import signal
 import time
 from collections import defaultdict
-from types import FrameType
-from typing import Any
 from csv import writer
+from dataclasses import dataclass
+from datetime import datetime
+from types import FrameType
+from typing import Any, Generator
+
+import atproto_client.models.app.bsky.feed.post
+from atproto import (
+    CAR,
+    AtUri,
+    FirehoseSubscribeReposClient,
+    firehose_models,
+    models,
+    parse_subscribe_repos_message,
+)
 
 # Inspired by (good reference) https://raw.githubusercontent.com/MarshalX/atproto/main/examples/firehose/process_commits.py
 
