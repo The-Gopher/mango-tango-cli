@@ -6,10 +6,10 @@ import { redirect } from "@remix-run/node";
 
 
 
-export const loader = async (x: any) => {
-    console.log(x);
-    const data = await fetch("http://localhost:5000/api/projects").then((res) => res.json());
-    // Return the data to expose through useLoaderData()
+export const loader = async ({ params }) => {
+    const { directoryName } = params;
+    console.log(directoryName);
+    const data = await fetch(`http://localhost:5000/api/projects/${directoryName}`).then((res) => res.json());
     return data;
 };
 
